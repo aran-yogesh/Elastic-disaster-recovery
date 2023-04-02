@@ -1,0 +1,34 @@
+AWS elastic Disaster Recovery 
+
+
+in the architecture there are source and aws server 
+
+in the architecture source server is continously replicating its data to replication server and also communicating with DRS
+
+we have to creat iam user with AWS elastic disaster recovery agent installation policy 
+
+in case of failback we need to creatre anpther iam user with AWS elastic diaster recovery failback agent installation policy
+
+step 1:
+
+Launch an source server instances
+
+step 2:
+
+goto AWS Elastic Disaster Recovery and create default settings to the account
+
+step 3:
+
+create a new IAM user with AWS lastic disaster recovery agent installation policy 
+
+
+then connect the instance and run the aws replication elastic disaster recovery installer command 
+
+after the installation there is a instance in created in source server and ec2
+
+and it has started to replicate the content from the  source server to the replication servicer 
+
+once the AWS elastic disaster recovery conversion server is disconnected then ip-172-31-39-85.ec2.internal replication server starts the service
+
+ 
+
